@@ -1,0 +1,441 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Apr 23 20:23:22 2023
+# Process ID: 4684
+# Current directory: C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.runs/synth_1/main.vds
+# Journal file: C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.runs/synth_1\vivado.jou
+# Running On: DESKTOP-VNTUHE6, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16886 MB
+#-----------------------------------------------------------
+source main.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 384.484 ; gain = 44.688
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/utils_1/imports/synth_1/main.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/utils_1/imports/synth_1/main.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top main -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28332
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-9400] empty statement in sequential block [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/dataMemory.v:30]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 826.414 ; gain = 409.234
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/main.v:3]
+INFO: [Synth 8-6157] synthesizing module 'programCounter' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/programCounter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'programCounter' (0#1) [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/programCounter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'pcAdder' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/pcAdder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pcAdder' (0#1) [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/pcAdder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instructionMemory' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/instructionMemory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'instructionMemory' (0#1) [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/instructionMemory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'controlUnit' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/controlUnit.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/controlUnit.v:25]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/controlUnit.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'controlUnit' (0#1) [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/controlUnit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'rdrtMux' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/rdrtMux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rdrtMux' (0#1) [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/rdrtMux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'immeMux' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/immeMux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'immeMux' (0#1) [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/immeMux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'jalMUX' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/jalMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'jalMUX' (0#1) [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/jalMUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/regfile.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/regfile.v:3]
+INFO: [Synth 8-6157] synthesizing module 'shift' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/shift.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'shift' (0#1) [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/shift.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bMux' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/bMux.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bMux' (0#1) [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/bMux.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/ALU.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'addrShift' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/addrShift.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'addrShift' (0#1) [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/addrShift.v:23]
+INFO: [Synth 8-6157] synthesizing module 'immeShift' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/immeShift.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'immeShift' (0#1) [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/immeShift.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dataMemory' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/dataMemory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'dataMemory' (0#1) [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/dataMemory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dataMemMux' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/dataMemMux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dataMemMux' (0#1) [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/dataMemMux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'targetPCAdder' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/targetPCAdder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'targetPCAdder' (0#1) [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/targetPCAdder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'programCounterMux' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/programCounterMux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'programCounterMux' (0#1) [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/programCounterMux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'main' (0#1) [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/main.v:3]
+WARNING: [Synth 8-7129] Port r[31] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[30] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[29] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[28] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[27] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[26] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[25] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[24] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[23] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[22] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[21] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[20] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[19] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[18] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[17] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[16] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[15] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[14] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[13] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[12] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[11] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[10] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[9] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[8] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[7] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[1] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[0] in module dataMemory is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 921.672 ; gain = 504.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 921.672 ; gain = 504.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 921.672 ; gain = 504.492
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+WARNING: [Synth 8-327] inferring latch for variable 'm2reg_reg' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/controlUnit.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'pcsrc_reg' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/controlUnit.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'wmem_reg' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/controlUnit.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'aluc_reg' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/controlUnit.v:30]
+WARNING: [Synth 8-327] inferring latch for variable 'shift_reg' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/controlUnit.v:29]
+WARNING: [Synth 8-327] inferring latch for variable 'aluimm_reg' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/controlUnit.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'sext_reg' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/controlUnit.v:139]
+WARNING: [Synth 8-327] inferring latch for variable 'jal_reg' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/controlUnit.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'regrt_reg' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/controlUnit.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'wreg_reg' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/controlUnit.v:28]
+WARNING: [Synth 8-327] inferring latch for variable 'dest_reg' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/rdrtMux.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/bMux.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'r_reg' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/ALU.v:17]
+WARNING: [Synth 8-327] inferring latch for variable 'z_reg' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/ALU.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/dataMemMux.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'pc_next_reg' [C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.srcs/sources_1/new/programCounterMux.v:15]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 921.672 ; gain = 504.492
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 33    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 6     
+	  33 Input   32 Bit        Muxes := 2     
+	  10 Input   32 Bit        Muxes := 2     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	  10 Input    1 Bit        Muxes := 6     
+	  13 Input    1 Bit        Muxes := 12    
+	   2 Input    1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design main has port do[30] driven by constant 0
+WARNING: [Synth 8-3917] design main has port do[20] driven by constant 0
+WARNING: [Synth 8-3332] Sequential element (RDRTMUX/dest_reg[4]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (RDRTMUX/dest_reg[3]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (RDRTMUX/dest_reg[2]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (RDRTMUX/dest_reg[1]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (RDRTMUX/dest_reg[0]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[31]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[30]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[29]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[28]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[27]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[26]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[25]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[24]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[23]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[22]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[21]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[20]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[19]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[18]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[17]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[16]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[15]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[14]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[13]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[12]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[11]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[10]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[9]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[8]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[7]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[6]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[5]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[4]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[3]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[2]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[1]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (BMUX/out_reg[0]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[31]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[30]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[29]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[28]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[27]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[26]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[25]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[24]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[23]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[22]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[21]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[20]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[19]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[18]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[17]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[16]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[15]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[14]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[13]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[12]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[11]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[10]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[9]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[8]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[7]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[6]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[5]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[4]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[3]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[2]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[1]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DMM/out_reg[0]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[31]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[30]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[29]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[28]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[27]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[26]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[25]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[24]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[23]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[22]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[21]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[20]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[19]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[18]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[17]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[16]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[15]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[14]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[13]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[12]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[11]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[10]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[9]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[8]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[7]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[6]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[5]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[4]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[3]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[2]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (PCMUX/pc_next_reg[1]) is unused and will be removed from module main.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:42 . Memory (MB): peak = 1284.215 ; gain = 867.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------------+------------+---------------+----------------+
+|Module Name       | RTL Object | Depth x Width | Implemented As | 
++------------------+------------+---------------+----------------+
+|instructionMemory | memory     | 128x30        | LUT            | 
++------------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------------+-----------+----------------------+----------------+
+|main        | DM/dataMemory_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
++------------+-------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:43 . Memory (MB): peak = 1284.215 ; gain = 867.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------------+-----------+----------------------+----------------+
+|main        | DM/dataMemory_reg | Implied   | 32 x 32              | RAM32X1S x 32  | 
++------------+-------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:43 . Memory (MB): peak = 1284.215 ; gain = 867.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:51 . Memory (MB): peak = 1284.215 ; gain = 867.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:51 . Memory (MB): peak = 1284.215 ; gain = 867.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:51 . Memory (MB): peak = 1284.215 ; gain = 867.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:51 . Memory (MB): peak = 1284.215 ; gain = 867.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:51 . Memory (MB): peak = 1284.215 ; gain = 867.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:51 . Memory (MB): peak = 1284.215 ; gain = 867.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    27|
+|3     |LUT1     |     2|
+|4     |LUT2     |    64|
+|5     |LUT3     |    69|
+|6     |LUT4     |    57|
+|7     |LUT5     |   264|
+|8     |LUT6     |   600|
+|9     |MUXF7    |   200|
+|10    |MUXF8    |    52|
+|11    |RAM32X1S |    32|
+|12    |FDRE     |  1024|
+|13    |LD       |    43|
+|14    |IBUF     |     1|
+|15    |OBUF     |   325|
++------+---------+------+
+
+Report Instance Areas: 
++------+-----------+---------------+------+
+|      |Instance   |Module         |Cells |
++------+-----------+---------------+------+
+|1     |top        |               |  2762|
+|2     |  CU       |controlUnit    |   183|
+|3     |  DM       |dataMemory     |    32|
+|4     |  PC       |programCounter |   479|
+|5     |  REG      |regfile        |  1688|
+|6     |  TARGETPC |targetPCAdder  |     8|
+|7     |  alu      |ALU            |    44|
++------+-----------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:51 . Memory (MB): peak = 1284.215 ; gain = 867.035
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 152 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:51 . Memory (MB): peak = 1284.215 ; gain = 867.035
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:51 . Memory (MB): peak = 1284.215 ; gain = 867.035
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1284.215 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 354 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1284.215 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 75 instances were transformed.
+  LD => LDCE: 43 instances
+  RAM32X1S => RAM32X1S (RAMS32): 32 instances
+
+Synth Design complete, checksum: aef2cf43
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 147 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:55 . Memory (MB): peak = 1284.215 ; gain = 874.891
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Garrett/Desktop/FinckeLab5Final/FinalProject/FinalProject.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 23 20:24:27 2023...
